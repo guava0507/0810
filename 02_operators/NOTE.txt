@@ -1,0 +1,38 @@
+row = readLine();
+
+while (row)
+{
+    //process one readLine
+    row = readLine();
+}
+
+row = readLine();
+while(row)
+{
+    if(row format is wrong)
+    {
+     row = readLine();
+     continue;    
+    }
+    if(row's data is n/a)
+    {
+        row = readLine();
+        continue;
+    }
+    row = readLine();
+}
+=======================================
+while (row = readLine())
+{
+    if(row format is wrong)
+    {
+        continue;
+    }
+}
+
+
+
+
+
+
+
