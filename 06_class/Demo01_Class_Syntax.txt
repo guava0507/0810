@@ -38,12 +38,10 @@
 	var obj = {
 		"firstName": "Wolfgang",
 		"lastName": "Chien"
-	};
+	}
 	debug.innerHTML = obj.firstName + " " + obj.lastName;
 
 </script>
-
-
 
 
 // --------------------------------------------------
@@ -54,12 +52,13 @@
 <script>
 
 	// A. 物件陣列，用中括號框住一組以 JSON 格式表現的物件
-	var objArray = [
+	var objArray = 
+    [
 		{"firstName":"Derek", "lastName":"Jeter"}, 
 		{"firstName":"Jeremy", "lastName":"Lin"}, 
 		{"firstName":"Lionel", "lastName":"Messi"}
 	];
-
+    
 	debug.innerText = JSON.stringify(objArray);
 	// B: [{"firstName":"Derek","lastName":"Jeter"},{"firstName":"Jeremy","lastName":"Lin"},{"firstName":"Lionel","lastName":"Messi"}]
 
@@ -79,6 +78,7 @@
 	var objArray = JSON.parse(s);
 	debug.innerHTML = objArray[2].lastName + "<br>";
 
+
 </script>
 
 
@@ -95,14 +95,13 @@
                 this.color = value;
             }
         }
-
+        
         var objBox = new Box();
         objBox.paint("Blue");
         debug.innerHTML = objBox.color;
-
+    
     </script>
-
-
+    
 
 // --------------------------------------------------
 // 160	回呼函式 Callback function

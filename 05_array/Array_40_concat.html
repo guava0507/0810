@@ -24,8 +24,9 @@ test.onclick = function () {
     var oddNumber = [1, 3, 5, 7, 9];
 
     // 你的任務程式...
-
+    var mergeNumber = [...evenNumber, ...oddNumber];
     
+    report.innerText = mergeNumber.toString();
 
 
 }  // end of test.onclick

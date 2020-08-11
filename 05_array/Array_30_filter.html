@@ -20,12 +20,29 @@ test.onclick = function () {
     // 任務: 
     // 請寫程式，將陣列內容是偶數的項目挑出來成立一個新陣列
     // 並且列出新陣列的內容
-
     var data = [3, 0, 1, 8, 7, 2, 5, 4, 9, 6];
-
+    // var x =0;
+    // var datalist = new Array();
+    // while(x<data.length)
+    // {
+    //     if(data[x]%2==0)
+    //     {
+    //           datalist.push(data[x]);
+    //     } 
+    //     x++;
+    // }
+    // report.innerText = datalist.toString();
     // 你的任務程式...
-    
 
+
+
+    // var datalist = data.filter(function(x)
+    // {
+    //    return x%2 == 0;
+    // });
+    var datalist = data.filter( x => x%2 == 0)
+
+    report.innerText = datalist.toString();
     
 
 

@@ -11,7 +11,7 @@
         // this 指向「使用該函式的物件」
         
         function showFullName() {
-            debug.innerText = this.firstName + " " + this.lastName;
+            debug.innerHTML += this.firstName + " " + this.lastName+"<br>";
         }
         
         var chien = {
@@ -26,7 +26,7 @@
             toString: showFullName
         }
         
-        // lin.toString();
+         lin.toString();
         chien.toString();
         
     </script>

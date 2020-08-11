@@ -2,9 +2,11 @@
 // 210 定義類別(一) -- class, new
 
 "use strict";
-class CAnimal {
-    makeSound() {
-        alert("Animal: ...");
+class CAnimal 
+{
+    makeSound() 
+    {
+       alert("Animal: ...");
     }
 }
 let obj = new CAnimal();
@@ -17,19 +19,25 @@ obj.makeSound();
 // 220 定義類別(二) -- private, property(get, set)
 
 "use strict";
-class CAnimal {
-    constructor() {
+class CAnimal 
+{
+    constructor() 
+    {
         this._weight = 0;
     }
-    get weight() {
+    get weight() 
+    {
         return this._weight;
     }
-    set weight(weightValue) {
-        if (weightValue > 0) {
+    set weight(weightValue) 
+    {
+        if (weightValue > 0) 
+        {
             this._weight = weightValue;
         }
     }
-    makeSound() {
+    makeSound() 
+    {
         alert("Animal: ...");
     }
 }
