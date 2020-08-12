@@ -14,7 +14,6 @@ function sad(data, timeCount) {
     })
 }
 
-
 async function living() {
     var promise1 = happy(200, 2000);
     var promise2 = sad(-100, 3000);

@@ -1,11 +1,23 @@
 function happy(data, timeCount) {
-    return new Promise( function (resolve, reject) {
-        setTimeout(function () {
+    return new Promise
+    ( function (resolve, reject) 
+    {
+        setTimeout(function () 
+        {
             resolve(data);
         }, timeCount)
     })
 }
-
+// function happy(data, timeCount)
+// {
+//     return new Promise((resolve, reject) =>
+//     {
+//         setTimeout( () =>
+//         {
+//             resolve(data);
+//         },timeCount)
+//     })
+// }
 function sad(data, timeCount) {
     return new Promise( function (resolve, reject) {
         setTimeout(function () {
@@ -13,8 +25,6 @@ function sad(data, timeCount) {
         }, timeCount)
     })
 }
-
-
 async function living() {
     var total = 0;
     var result1 = await happy(200, 2000);

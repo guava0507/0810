@@ -5,7 +5,16 @@ function happy(data, timeCount) {
         }, timeCount)
     })
 }
-
+// function happy(data,timeCount)
+// {
+//     return new Promise((resolve,reject) => 
+//     {
+//         setTimeout(() =>
+//         {
+//             resolve(data);
+//         },timeCount)
+//     })
+// }
 function sad(data, timeCount) {
     return new Promise( function (resolve, reject) {
         setTimeout(function () {

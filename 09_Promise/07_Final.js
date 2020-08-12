@@ -16,7 +16,7 @@ function sad(data, timeCount) {
 
 
 async function living() {
-    let [result1, result2] = 
+     let  [result1, result2] = 
       await Promise.all([happy(200, 2000), sad(-100, 3000)]);
 
     var total = result1 + result2;

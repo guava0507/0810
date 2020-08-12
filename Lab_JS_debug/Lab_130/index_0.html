@@ -8,7 +8,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <style>
         .task-description,
-        .list-group {
+        .list-group {   
             font-size: 1.25em;
         }
     </style>
@@ -40,14 +40,17 @@
 
     <script>
     
-    function displayTime {
+    function displayTime (c)
+    {
         report.innerHTML = Date();
-        setInterval(displayTime(), 1000);
-    
-    
-    displayTime;
-    
-    
+        setTimeout(displayTime,c);
+        // setTimerout(displayTime,1000)
+        // setInterval(displayTime, 1000)
+        
+        
+    }
+   displayTime(1000);
+   
     </script>
 
 </body>

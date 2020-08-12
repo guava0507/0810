@@ -46,19 +46,26 @@
         undefined,
         "lionel.messi@gmail.com"
         ];
-    
+        
     function sendMail(mailAddress) {
-        // if (mailAddress != undefined) {
-        //     $("#report").append("資料有缺<br>");
-        //     return;
-        // }
+        if(typeof mailAddress === "undefined") 
+        {
+            $("#report").append("資料有缺<br>");
+             return;
+        }
+        
+        // if (mailAddress == undefined) 
+        // {
+        //      $("#report").append("資料有缺<br>");
+        //      return;
+        // }    錯誤寫法
+
         $("#report").append(mailAddress.toString() + "<br>");
     }
     
     for (i = 0; i < mailList.length; i++) {
         sendMail(mailList[i]);
-    }
-    
+    } 
     
     
 </script>

@@ -11,8 +11,6 @@ JavaScript 除錯練習
 
 
 
-
-
 【課後參考資料】
 
 JavaScript is Awe-ful

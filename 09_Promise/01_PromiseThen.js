@@ -1,10 +1,24 @@
 function longTimeWork(workFine = true, errorMessage = "test") {
-    return new Promise( (resolve, reject) => {
-        setTimeout( () => {
+    return new Promise( (resolve, reject) => 
+    {
+        setTimeout( () => 
+        {
             (workFine) ? resolve(200) : reject(errorMessage);
         }, 1000);
     })
 }
+// function longTimeWork(workFine = true, errorMessage = "test")
+// {
+//     return new Promise(function(resolve,reject)
+//     {
+//          setTimeout(function()
+//          {
+//              (workFine) ? resolve(200) : reject(errorMessage="test");
+//          },1000);
+//     })
+        
+  
+// }
 
 function usingLongTimeWork() {
     longTimeWork(true, "test")  // try true/false
